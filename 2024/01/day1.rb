@@ -4,7 +4,7 @@ require_relative '../util'
 
 class Day1
   def self.load_numbers(env)
-    content = Util.load_inputs(env)
+    content = Util.load_inputs(env, "01")
 
     list1 = []
     list2 = []
@@ -51,4 +51,3 @@ class Day1
     end
   end
 end
-

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../day1'
+require_relative '../../01/day1'
 
 describe Day1 do
   describe 'load_numbers' do

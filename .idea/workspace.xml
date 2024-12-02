@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fafcbcc-e00a-4043-9ea8-c8026328d59b" name="Changes" comment="" />
+    <list default="true" id="0fafcbcc-e00a-4043-9ea8-c8026328d59b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2024/01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/.rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/actual.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/day1.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/spec/day1_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2024/01/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +50,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-RM-241.18034.63" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
@@ -59,6 +75,8 @@
       <workItem from="1704898163938" duration="599000" />
       <workItem from="1705251371916" duration="174000" />
       <workItem from="1705251683826" duration="587000" />
+      <workItem from="1733095933048" duration="43000" />
+      <workItem from="1733100208870" duration="17000" />
     </task>
     <servers />
   </component>

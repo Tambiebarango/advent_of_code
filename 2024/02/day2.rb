@@ -57,8 +57,6 @@ class Day2
   end
 
   def difference(arr)
-    arr.each_cons(2).map do |a, b|
-      b - a
-    end
+    arr.each_cons(2).map { |a, b| b - a }
   end
 end

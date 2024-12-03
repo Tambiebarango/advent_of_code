@@ -30,7 +30,8 @@ class Day2
   private
 
   def safe?(arr)
-    all_increasing_or_decreasing?(difference(arr)) && valid_level_change?(difference(arr))
+    diff = difference(arr)
+    all_increasing_or_decreasing?(diff) && valid_level_change?(diff)
   end
 
   def kind_of_safe?(list)

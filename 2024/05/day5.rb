@@ -33,39 +33,31 @@ class Day5
 
   def valid?(update)
     @rules.all? do |num, must_precede|
-      num_index = update.index(num)
+      next true unless num_index = update.index(num)
 
-      next true unless num_index
-
-      must_precede.all? do |n|
-        n_index = update.index(n)
-
-        next true unless n_index
-
-        n_index > num_index
-      end
+      min_index_of(must_precede, update, num_index) > num_index
     end
   end
 
   def correct(update)
     until valid?(update)
       @rules.each do |num, must_precede|
-        num_index = update.index(num)
+        next unless num_index = update.index(num)
 
-        next unless num_index
+        min_index = min_index_of(must_precede, update, num_index)
+        next if num_index < min_index
 
-        min_index_of_must_precede = must_precede.filter_map { |must| update.index(must) }.min
-
-        next unless min_index_of_must_precede
-        next if num_index < min_index_of_must_precede
-
-        update[min_index_of_must_precede].tap do |temp|
-          update[min_index_of_must_precede] = num
+        update[min_index].tap do |temp|
+          update[min_index] = num
           update[num_index] = temp
         end
       end
     end
 
     update
+  end
+
+  def min_index_of(must_precede, update, fallback)
+    must_precede.filter_map { |must| update.index(must) }.min || fallback + 1
   end
 end

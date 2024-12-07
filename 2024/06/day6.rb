@@ -42,7 +42,6 @@ class Day6
 
     part_1 # to mark the X locations where the guard walks on
 
-    loop_counts = 0 # track loops sighted
     obstacles = []
     xs = @grid.select { |_, v| v == "X" }.keys
 
@@ -69,8 +68,6 @@ class Day6
 
           @repeated_step = visited.include? [guard_x, guard_y, facing]
           if @repeated_step
-            loop_counts += 1
-            puts "\n\nnew loop count: #{loop_counts}\n"
             obstacles << coordinates_of_x
             puts "obstacle count is now: #{obstacles.size}\n"
             break
